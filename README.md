@@ -7,7 +7,7 @@ Java Persistent Api por defecto trabaja con entidades, las cuales tienen la espe
 
 En variados proyectos para cumplir con este objetivo los desarrolladores adoptamos algunas técnicas, por ejemplo:
 - Mapear o convertir los objetos entitys de forma manual.
-- Que nuestra consulta retorne los resultados en una clase genérica como List<Map<Object, Object>> con la cantidad de campos específicos en la consulta, lo que dificulta el trabajo posterior con los atributos.
+- Que nuestra consulta retorne los resultados en una clase genérica como List<Map<Object, Object>> con la cantidad de campos específicos en la consulta nativa.
 - Settear en el controlador los atributos con valores default
 
 Todos en algún momento nos hemos ideado más de alguna técnica para retornar solo algunos campos cuando trabajamos con JPA e Hibernate.
@@ -18,5 +18,9 @@ Una de las técnicas que me agrada para cumplir con el requerimiento mencionado 
 -	Proyección por interfaz abierta: En este tipo de proyecciones el nombre de los métodos definidos en la interfaz puede ser diferente a los métodos getter definidos en la entidad, se mapean a través de la notación @Value
 -	Proyección a través de clase: En este tipo de proyección se refleja a través de una clase POJO donde el constructor debe tener el nombre de los atributos que se van a retornar al cliente.
 
+La ruta del controlador donde se encuentran los ejemplo es
 ```
+src/main/java/Controller/PersonaController.java
 ```
+
+El proyecto cuenta con una base de datos H2 que se cre en tiempo de ejecucion para probar los ejemplo de las diferentes proyecciones.
