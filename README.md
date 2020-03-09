@@ -23,4 +23,4 @@ La ruta del controlador donde se encuentran los ejemplo es
 src/main/java/Controller/PersonaController.java
 ```
 
-El proyecto cuenta con una base de datos H2 que se cre en tiempo de ejecucion para probar los ejemplo de las diferentes proyecciones.
+El proyecto cuenta con una base de datos H2 que se instancia en tiempo de ejecucion para probar los ejemplos de las diferentes proyecciones.
